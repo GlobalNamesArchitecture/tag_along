@@ -1,7 +1,11 @@
 TagAlong
 ========
 
-TODO: Write a gem description
+A user who runs a search tool against a text would find 
+multiple text fragments corresponding to the search.
+These fragments can be found again by storing their 
+start and end offsets. This gem places arbitrary
+markup tags surrounding the fragments.
 
 Installation
 ------------
@@ -21,7 +25,12 @@ Or install it yourself as:
 Usage
 -----
 
-TODO: Write usage instructions here
+To add tags to a text:
+
+    tg = TagAlong.new(some_text)
+    offsets = [[2, 5], [9, 22], [33, 35]]
+    tg.tag('<my_tag>', '</my_tag>', offsets)
+
 
 Contributing
 ------------

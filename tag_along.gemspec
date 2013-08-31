@@ -8,8 +8,13 @@ Gem::Specification.new do |spec|
   spec.version       = TagAlong::VERSION
   spec.authors       = ["Dmitry Mozzherin"]
   spec.email         = ["dmozzherin@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Tags a text with arbitrary tags
+                          based on array of start/end offsets}
+  spec.summary       = %q{A user who runs a search tool on a text would find 
+                          multiple text fragments corresponding to the search.
+                          These fragments can be found again by storing their 
+                          start and end offsets. This gem places arbitrary
+                          markup tags surrounding the fragments.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
