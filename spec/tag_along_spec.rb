@@ -14,7 +14,7 @@ describe TagAlong do
 
   it 'should tag' do
     tg = TagAlong.new(TEXT)
-    tagged_text = tg.tag('<my_tag>', '</my_tag>', OFFSET_HASH)
+    tagged_text = tg.tag('<my_tag>', '</my_tag>', OFFSETS_HASH)
     tg.tagged_text.should == tagged_text
     tg.tagged_text.should include('<my_tag>Lebistes reticulatus</my_tag>')
   end

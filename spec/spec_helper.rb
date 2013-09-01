@@ -21,13 +21,13 @@ module TagAlongSpec
                      offset_end: h[:offsetEnd])
     end
     offset_ary = offset_obj.map { |h| [h.offset_start, h.offset_end] }
-    [text, offset_hash, offset_ary, offset_hash, offset_obj]
+    [text, offset_ary, offset_hash, offset_obj]
   end
 end
 
 unless defined?(SPEC_VARS)
   FILES_DIR = File.expand_path(File.join(File.dirname(__FILE__), 'files'))
-  TEXT, OFFSET_ARY, OFFSET_HASH, OFFSET_OBJ = 
+  TEXT, OFFSETS_ARY, OFFSETS_HASH, OFFSETS_OBJ = 
     TagAlongSpec.process_spec_data(FILES_DIR)
   SPEC_VARS = true
 end
