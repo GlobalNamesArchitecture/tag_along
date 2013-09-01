@@ -13,7 +13,8 @@ These fragments can be found again by storing their
 start and end offsets. This gem places arbitrary
 markup tags surrounding the fragments.
 
-Gem works with UTF-8 and ASCII7 texts.
+Gem works with UTF-8 and ASCII7 texts. It is quite fast and allows to tag
+4MB of text in one second on 2.7GHz processor.
 
 Installation
 ------------
