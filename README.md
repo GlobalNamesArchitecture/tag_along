@@ -13,6 +13,8 @@ These fragments can be found again by storing their
 start and end offsets. This gem places arbitrary
 markup tags surrounding the fragments.
 
+Gem works with UTF-8 and ASCII7 texts.
+
 Installation
 ------------
 
@@ -31,12 +33,54 @@ Or install it yourself as:
 Usage
 -----
 
+For example you want to tag days of week from a text:
+
+    text = "There's Sunday and there's Monday"
+
 To add tags to a text:
 
-    tg = TagAlong.new(some_text)
-    offsets = [[2, 5], [9, 22], [33, 35]]
-    tg.tag('<my_tag>', '</my_tag>', offsets)
+    offsets = [[8,13], [27,32]]
+    tg = TagAlong.new(text, offsets)
+    
+    tg.tag('<my_tag>', '</my_tag>')
+    puts tg.tagged_text
+    # There's <my_tag>Sunday</my_tag> and there's <my_tag>Monday</my_tag>
+    
+    tg.tag('<em>', '</em>')
+    puts tg.tagged_text
+    # There's <em>Sunday</em> and there's <em>Monday</em>
 
+Notice that you can retag the text as many times as you want.
+
+### Offsets
+  
+To prepare offsets from an arbitrary object:
+    
+    # Array of arrays
+    my_ary = [[8,13], [27,32]]
+    offsets = TagAlong::Offsets.new(my_ary)
+
+    # Array of hashes
+    my_hash = [{ start: 8, end:13 }, { start:27, end:32 }]
+    offsets = TagAlong::Offsets.new(my_hash,
+                                    offset_start: 'start'
+                                    offset_end: 'end')
+    or
+    offsets = TagAlong::Offsets.new(my_hash,
+                                    offset_start: :start,
+                                    offset_end: :end)
+
+    # Array of objects
+    require 'ostruct'
+    my_obj = [OpenStruct.new(s: 8, e: 13), OpenStruct.new(s: 27, e: 32)]
+    offsets = TagAlong::Offsets.new(my_obj,
+                                    offset_start: :s,
+                                    offset_end: :e)
+
+In all cases you can instantiate TagAlong with resulting offsets:
+
+    tg = TagAlong.new(text, offsets)
+    tg.tag('|hi|', '|bye|')
 
 Contributing
 ------------

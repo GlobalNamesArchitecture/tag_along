@@ -22,4 +22,12 @@ describe TagAlong do
     tg.tagged_text.should 
       include('<another_tag>Lebistes reticulatus</another_tag>')
   end
+
+  it 'should tag' do
+    text = 'There\'s Sunday and there\'s Monday'
+    offsets = [[8,13], [27,32]]
+    tg = TagAlong.new(text, offsets)
+    tg.tag('<em>', '</em>').should == 
+      %q{There's <em>Sunday</em> and there's <em>Monday</em>}
+  end
 end
