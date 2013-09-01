@@ -6,16 +6,20 @@ describe TagAlong do
   end
 
   it 'should initialize' do
-    tg = TagAlong.new(TEXT)
+    tg = TagAlong.new(TEXT, OFFSETS_ARY)
     tg.is_a?(TagAlong).should be_true
     tg.text.should == TEXT
     tg.tagged_text.should be_nil
   end
 
   it 'should tag' do
-    tg = TagAlong.new(TEXT)
-    tagged_text = tg.tag('<my_tag>', '</my_tag>', OFFSETS_HASH)
+    tg = TagAlong.new(TEXT, OFFSETS_ARY)
+    tagged_text = tg.tag('<my_tag>', '</my_tag>')
     tg.tagged_text.should == tagged_text
     tg.tagged_text.should include('<my_tag>Lebistes reticulatus</my_tag>')
+    tagged_text = tg.tag('<another_tag>', '</another_tag>')
+    tg.tagged_text.should == tagged_text
+    tg.tagged_text.should 
+      include('<another_tag>Lebistes reticulatus</another_tag>')
   end
 end
