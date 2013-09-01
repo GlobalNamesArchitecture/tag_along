@@ -1,0 +1,407 @@
+{
+  "token_url": "http://gnrd.globalnames.org/name_finder.json?token=Row8ZZJSTsuwJxhQtgha9A",
+  "input_url": null,
+  "file": "Embryology 1939_15B.tiff",
+  "status": 200,
+  "engines": [
+    "TaxonFinder",
+    "NetiNeti"
+  ],
+  "unique": false,
+  "verbatim": true,
+  "english": true,
+  "execution_time": {
+    "find_names_duration": 0.237166328,
+    "resolve_names_duration": 1.956796471,
+    "total_duration": 23.716051434
+  },
+  "agent": "",
+  "created": "2013-06-19T15:22:01-04:00",
+  "total": 11,
+  "names": [
+    {
+      "verbatim": "Pundulus",
+      "scientificName": "Pundulus",
+      "offsetStart": 61,
+      "offsetEnd": 68,
+      "identifiedName": "Pundulus"
+    },
+    {
+      "verbatim": "Lebistes reticulatus",
+      "scientificName": "Lebistes reticulatus",
+      "offsetStart": 866,
+      "offsetEnd": 885,
+      "identifiedName": "Lebistes reticulatus"
+    },
+    {
+      "verbatim": "Cottus",
+      "scientificName": "Cottus",
+      "offsetStart": 955,
+      "offsetEnd": 960,
+      "identifiedName": "Cottus"
+    },
+    {
+      "verbatim": "Entosphenus wilderi",
+      "scientificName": "Entosphenus wilderi",
+      "offsetStart": 1085,
+      "offsetEnd": 1103,
+      "identifiedName": "Entosphenus wilderi"
+    },
+    {
+      "verbatim": "Fundulus",
+      "scientificName": "Fundulus",
+      "offsetStart": 1347,
+      "offsetEnd": 1354,
+      "identifiedName": "Fundulus"
+    },
+    {
+      "verbatim": "Fundulus heteroclitus",
+      "scientificName": "Fundulus heteroclitus",
+      "offsetStart": 1604,
+      "offsetEnd": 1624,
+      "identifiedName": "Fundulus heteroclitus"
+    },
+    {
+      "verbatim": "Nouveaux essais",
+      "scientificName": "Nouveaux essais",
+      "offsetStart": 1857,
+      "offsetEnd": 1871,
+      "identifiedName": "Nouveaux essais"
+    },
+    {
+      "verbatim": "Acipenser",
+      "scientificName": "Acipenser",
+      "offsetStart": 2137,
+      "offsetEnd": 2145,
+      "identifiedName": "Acipenser"
+    },
+    {
+      "verbatim": "Acipenser guldenstadtii",
+      "scientificName": "Acipenser guldenstadtii",
+      "offsetStart": 2183,
+      "offsetEnd": 2205,
+      "identifiedName": "Acipenser guldenstadtii"
+    },
+    {
+      "verbatim": "Acipenser stellatus",
+      "scientificName": "Acipenser stellatus",
+      "offsetStart": 2211,
+      "offsetEnd": 2229,
+      "identifiedName": "Acipenser stellatus"
+    },
+    {
+      "verbatim": "Fundulus heteroclitus",
+      "scientificName": "Fundulus heteroclitus",
+      "offsetStart": 2462,
+      "offsetEnd": 2482,
+      "identifiedName": "Fundulus heteroclitus"
+    }
+  ],
+  "content": "1959 \nNewman H. H. Spawmin behavior and sexual dimorphism of Pundulus\n9 5 QS\nheteroclitus and allied fish. Biol. Bull. 12, 1907.\nIV. CIRGULATORY SYSTEM\nP. B. Functional reactions in the embryonic heart accom~\npanying the ingrowth and development of the vagus\ninnervation. Jour. Exp. Zool. 58, 1951.\nBrinley, P. J. A Physiological study of the innervation of the\nheart of fish embryos. Physiol. Zool. 5, 1952.\nReagan, F, P. Experimental studies in the origin of the vascular\nendothelium and of Am. Jour, Anat.\n21, 1917. \nShearer, E. M. Studies on the embryology of the circulation in\nfishes, 1. and ll. Am. Jour. Anat. 46, 1950.\nStockard, C. R. An experimental analysis of the origin of blood\nand vascular endothelium Mem. Wist. Inst. Anat.\nBiol. No. 7, 1915. also Am. Jour, Anat. 18, 1915.\nV. GERM CELLS\nGoodrich, H. B., et al. Germ cells and sex differentiation in\nLebistes reticulatus. Biol. Bull. 67, 1954.\nMann, H. W. The history of the germ cells of Cottus Baerdii. Gerard\nJour. Morph. Physiol. 45, 1927.\nokkelberg, Peter The early history of the germ cells in the brook\nlamprey, Entosphenus wilderi (Gage) up to and in~\ncluding the period of sex differentiation. Jour.\nMorph. 55, 1921. (This paper has a complete bib-\nliography of work on germ cells in other groups.)\nTichards, A. and Thompson, James I., Migration with primary sex\ncells of Fundulus hetercclitus Biol. Bull. 40, 1921.\nWolf, L. E. The history of the germ cells in the viviparous\n1 teleost PPlatypoecilus maculatus. Jour. Morph. and\nPhysiol. 52, 1951.\n1 VI. EXPERIMENTAL WORK.\nAmberson, W. R, and F. B. The respiratory metabolism\nof Fundulus heteroclitus during embryonic develop-\nmental Jour. Cell. and Comp. Physiol. 2, 1955.\nP. B. The embryonic origin of function in the pronephros\nthrough differentiation and paren~chyma-vascular\nassociation. Amer. Jour. Anat. 51, 1952.\nBatallion, Nouveaux essais de Parthenogenere experimentale chez les\nvertibres infesienes Arch. Ent. Mech. 18, 1904.\nClapp, C. M. The relation of the axis of the embryo to the first\ncleavage plane. Biol Lect. M. B. L. 1898.\nFilatow, D. Entwicklungsmechanishhe Untersuchungen an Embryonen\nvon Acipenser guldenstadtti and Acipenbryonen von\nAcipenser guldenstadtii und Acipenser stellatus.\nArch. Ent. Mech. 122, 1950.\nHinriChS,.M. A. and Genther 1. T. Ultraviolet radiation and the\nproduction of twins and double monsters. Physiol.\niZool. 4, 1951.\nHeadley, L. 0n the localization of developmental potencies in\nembryo of Fundulus heteroclitus Jour. Exp. Zool.\n52, 1928.\n\n",
+  "data_sources": [
+
+  ],
+  "context": null,
+  "resolved_names": [
+    {
+      "supplied_name_string": "Pundulus",
+      "results": [
+        null
+      ],
+      "preferred_results": [
+
+      ],
+      "data_sources_number": 0,
+      "in_curated_sources": false
+    },
+    {
+      "supplied_name_string": "Lebistes reticulatus",
+      "results": [
+        {
+          "data_source_id": 12,
+          "data_source_title": "EOL",
+          "gni_uuid": "3564821e-720d-587c-96d7-7e29612a81ad",
+          "name_string": "Lebistes reticulatus",
+          "canonical_form": "Lebistes reticulatus",
+          "classification_path": "",
+          "classification_path_ranks": "",
+          "classification_path_ids": "",
+          "taxon_id": "37270453",
+          "local_id": "11081658",
+          "url": "http://eol.org/pages/11081658",
+          "match_type": 1,
+          "prescore": "3|0|0",
+          "score": 0.988
+        }
+      ],
+      "preferred_results": [
+        {
+          "data_source_id": 12,
+          "data_source_title": "EOL",
+          "gni_uuid": "3564821e-720d-587c-96d7-7e29612a81ad",
+          "name_string": "Lebistes reticulatus",
+          "canonical_form": "Lebistes reticulatus",
+          "classification_path": "",
+          "classification_path_ranks": "",
+          "classification_path_ids": "",
+          "taxon_id": "37270453",
+          "local_id": "11081658",
+          "url": "http://eol.org/pages/11081658",
+          "match_type": 1,
+          "prescore": "3|0|0",
+          "score": 0.988
+        }
+      ],
+      "data_sources_number": 11,
+      "in_curated_sources": true
+    },
+    {
+      "supplied_name_string": "Cottus",
+      "results": [
+        {
+          "data_source_id": 1,
+          "data_source_title": "Catalogue of Life",
+          "gni_uuid": "ee98e65c-3d7b-5317-91e8-eb543255e7ba",
+          "name_string": "Cottus",
+          "canonical_form": "Cottus",
+          "classification_path": "Animalia|Chordata|Actinopterygii|Scorpaeniformes|Cottidae|Cottus",
+          "classification_path_ranks": "kingdom|phylum|class|order|family|genus",
+          "classification_path_ids": "2362377|2362754|2365430|2365507|2365562|2396188",
+          "taxon_id": "2396188",
+          "match_type": 1,
+          "prescore": "1|0|0",
+          "score": 0.75
+        }
+      ],
+      "preferred_results": [
+        {
+          "data_source_id": 12,
+          "data_source_title": "EOL",
+          "gni_uuid": "ee98e65c-3d7b-5317-91e8-eb543255e7ba",
+          "name_string": "Cottus",
+          "canonical_form": "Cottus",
+          "classification_path": "",
+          "classification_path_ranks": "",
+          "classification_path_ids": "",
+          "taxon_id": "37305832",
+          "local_id": "204556",
+          "url": "http://eol.org/pages/204556",
+          "match_type": 1,
+          "prescore": "1|0|0",
+          "score": 0.75
+        }
+      ],
+      "data_sources_number": 19,
+      "in_curated_sources": true
+    },
+    {
+      "supplied_name_string": "Entosphenus wilderi",
+      "results": [
+        {
+          "data_source_id": 168,
+          "data_source_title": "Index to Organism Names",
+          "gni_uuid": "11c30211-b0b8-5927-903e-1f959cd6173b",
+          "name_string": "Entosphenus wilderi",
+          "canonical_form": "Entosphenus wilderi",
+          "classification_path": "",
+          "classification_path_ranks": "",
+          "classification_path_ids": "",
+          "taxon_id": "128746584",
+          "url": "http://www.organismnames.com/details.htm?lsid=3414383",
+          "match_type": 1,
+          "prescore": "3|0|0",
+          "score": 0.988
+        }
+      ],
+      "preferred_results": [
+
+      ],
+      "data_sources_number": 1,
+      "in_curated_sources": false
+    },
+    {
+      "supplied_name_string": "Fundulus",
+      "results": [
+        {
+          "data_source_id": 1,
+          "data_source_title": "Catalogue of Life",
+          "gni_uuid": "849efb3e-564d-5bed-b388-d2abd1e89de0",
+          "name_string": "Fundulus",
+          "canonical_form": "Fundulus",
+          "classification_path": "Animalia|Chordata|Actinopterygii|Cyprinodontiformes|Fundulidae|Fundulus",
+          "classification_path_ranks": "kingdom|phylum|class|order|family|genus",
+          "classification_path_ids": "2362377|2362754|2365430|2369356|2369363|2396458",
+          "taxon_id": "2396458",
+          "match_type": 1,
+          "prescore": "1|0|0",
+          "score": 0.75
+        }
+      ],
+      "preferred_results": [
+        {
+          "data_source_id": 12,
+          "data_source_title": "EOL",
+          "gni_uuid": "849efb3e-564d-5bed-b388-d2abd1e89de0",
+          "name_string": "Fundulus",
+          "canonical_form": "Fundulus",
+          "classification_path": "",
+          "classification_path_ranks": "",
+          "classification_path_ids": "",
+          "taxon_id": "37305680",
+          "local_id": "207614",
+          "url": "http://eol.org/pages/207614",
+          "match_type": 1,
+          "prescore": "1|0|0",
+          "score": 0.75
+        }
+      ],
+      "data_sources_number": 16,
+      "in_curated_sources": true
+    },
+    {
+      "supplied_name_string": "Fundulus heteroclitus",
+      "results": [
+        {
+          "data_source_id": 4,
+          "data_source_title": "NCBI",
+          "gni_uuid": "b4e4dfca-4136-5fc1-8688-53af51190898",
+          "name_string": "Fundulus heteroclitus",
+          "canonical_form": "Fundulus heteroclitus",
+          "classification_path": "|Eukaryota|Opisthokonta|Metazoa|Eumetazoa|Bilateria|Coelomata|Deuterostomia|Chordata|Craniata|Vertebrata|Gnathostomata|Teleostomi|Euteleostomi|Actinopterygii|Actinopteri|Neopterygii|Teleostei|Elopocephala|Clupeocephala|Euteleostei|Neognathi|Neoteleostei|Eurypterygii|Ctenosquamata|Acanthomorpha|Euacanthomorpha|Holacanthopterygii|Acanthopterygii|Euacanthopterygii|Percomorpha|Smegmamorpha|Atherinomorpha|Cyprinodontiformes|Cyprinodontoidei|Fundulidae|Fundulus|Fundulus heteroclitus",
+          "classification_path_ranks": "|superkingdom||kingdom|||||phylum|subphylum||superclass|||class||||||||||||||superorder|||||order|suborder|family|genus|species",
+          "classification_path_ids": "131567|2759|33154|33208|6072|33213|33316|33511|7711|89593|7742|7776|117570|117571|7898|186623|41665|32443|186624|186625|32447|186839|123365|123366|123367|123368|123369|123370|32455|129947|32485|129949|32456|28738|8087|28756|8077|8078",
+          "taxon_id": "8078",
+          "match_type": 1,
+          "prescore": "3|0|0",
+          "score": 0.988
+        }
+      ],
+      "preferred_results": [
+        {
+          "data_source_id": 12,
+          "data_source_title": "EOL",
+          "gni_uuid": "b4e4dfca-4136-5fc1-8688-53af51190898",
+          "name_string": "Fundulus heteroclitus",
+          "canonical_form": "Fundulus heteroclitus",
+          "classification_path": "",
+          "classification_path_ranks": "",
+          "classification_path_ids": "",
+          "taxon_id": "39163140",
+          "local_id": "1157172",
+          "url": "http://eol.org/pages/1157172",
+          "match_type": 1,
+          "prescore": "3|0|0",
+          "score": 0.988
+        }
+      ],
+      "data_sources_number": 15,
+      "in_curated_sources": true
+    },
+    {
+      "supplied_name_string": "Nouveaux essais"
+    },
+    {
+      "supplied_name_string": "Acipenser",
+      "results": [
+        {
+          "data_source_id": 1,
+          "data_source_title": "Catalogue of Life",
+          "gni_uuid": "0801dea4-b087-5845-b4f3-e27adeb5eef7",
+          "name_string": "Acipenser",
+          "canonical_form": "Acipenser",
+          "classification_path": "Animalia|Chordata|Actinopterygii|Acipenseriformes|Acipenseridae|Acipenser",
+          "classification_path_ranks": "kingdom|phylum|class|order|family|genus",
+          "classification_path_ids": "2362377|2362754|2365430|2371893|2371895|2395796",
+          "taxon_id": "2395796",
+          "match_type": 1,
+          "prescore": "1|0|0",
+          "score": 0.75
+        }
+      ],
+      "preferred_results": [
+        {
+          "data_source_id": 12,
+          "data_source_title": "EOL",
+          "gni_uuid": "0801dea4-b087-5845-b4f3-e27adeb5eef7",
+          "name_string": "Acipenser",
+          "canonical_form": "Acipenser",
+          "classification_path": "",
+          "classification_path_ranks": "",
+          "classification_path_ids": "",
+          "taxon_id": "20627458",
+          "local_id": "15048",
+          "url": "http://eol.org/pages/15048",
+          "match_type": 1,
+          "prescore": "1|0|0",
+          "score": 0.75
+        }
+      ],
+      "data_sources_number": 19,
+      "in_curated_sources": true
+    },
+    {
+      "supplied_name_string": "Acipenser guldenstadtii",
+      "results": [
+        {
+          "data_source_id": 168,
+          "data_source_title": "Index to Organism Names",
+          "gni_uuid": "4bd1443b-c862-5ac3-849b-18d481af6a4e",
+          "name_string": "Acipenser guldenstadtii",
+          "canonical_form": "Acipenser guldenstadtii",
+          "classification_path": "",
+          "classification_path_ranks": "",
+          "classification_path_ids": "",
+          "taxon_id": "126471337",
+          "url": "http://www.organismnames.com/details.htm?lsid=960481",
+          "match_type": 1,
+          "prescore": "3|0|0",
+          "score": 0.988
+        }
+      ],
+      "preferred_results": [
+
+      ],
+      "data_sources_number": 3,
+      "in_curated_sources": true
+    },
+    {
+      "supplied_name_string": "Acipenser stellatus",
+      "results": [
+        {
+          "data_source_id": 4,
+          "data_source_title": "NCBI",
+          "gni_uuid": "35353b10-cb9b-50dd-929c-934c4e6ff172",
+          "name_string": "Acipenser stellatus",
+          "canonical_form": "Acipenser stellatus",
+          "classification_path": "|Eukaryota|Opisthokonta|Metazoa|Eumetazoa|Bilateria|Coelomata|Deuterostomia|Chordata|Craniata|Vertebrata|Gnathostomata|Teleostomi|Euteleostomi|Actinopterygii|Actinopteri|Chondrostei|Acipenseriformes|Acipenseroidei|Acipenseridae|Acipenserinae|Acipenserini|Acipenser|Acipenser stellatus",
+          "classification_path_ranks": "|superkingdom||kingdom|||||phylum|subphylum||superclass|||class|||order|suborder|family|subfamily|tribe|genus|species",
+          "classification_path_ids": "131567|2759|33154|33208|6072|33213|33316|33511|7711|89593|7742|7776|117570|117571|7898|186623|32440|7899|186622|7900|124129|124130|7901|7903",
+          "taxon_id": "7903",
+          "match_type": 1,
+          "prescore": "3|0|0",
+          "score": 0.988
+        }
+      ],
+      "preferred_results": [
+        {
+          "data_source_id": 12,
+          "data_source_title": "EOL",
+          "gni_uuid": "35353b10-cb9b-50dd-929c-934c4e6ff172",
+          "name_string": "Acipenser stellatus",
+          "canonical_form": "Acipenser stellatus",
+          "classification_path": "",
+          "classification_path_ranks": "",
+          "classification_path_ids": "",
+          "taxon_id": "35677530",
+          "local_id": "206889",
+          "url": "http://eol.org/pages/206889",
+          "match_type": 1,
+          "prescore": "3|0|0",
+          "score": 0.988
+        }
+      ],
+      "data_sources_number": 23,
+      "in_curated_sources": true
+    }
+  ]
+}
