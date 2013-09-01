@@ -46,9 +46,12 @@ class TagAlong
 
     def process_obj
       @offsets = @offsets.map do |o|
+        item_string = o.respond_to?(@item_string) ? 
+          o.send(@item_string) :
+          nil
         instantiate(o.send(@offset_start), 
                     o.send(@offset_end), 
-                    o.send(@item_string)) 
+                    item_string) 
       end
     end
     
