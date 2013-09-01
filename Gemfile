@@ -1,4 +1,16 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in tag_along.gemspec
-gemspec
+gem 'json', '~> 1.7'
+
+group :development do
+  gem 'bundler', '~> 1.3'
+  gem 'debugger','~> 1.6'
+end
+
+group :test do
+  gem 'rake', '~> 10.1'
+  gem 'rspec', '~> 2.14'
+  gem 'rr', '~> 1.1'
+end
+  
+

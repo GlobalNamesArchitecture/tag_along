@@ -1,6 +1,12 @@
 TagAlong
 ========
 
+[![Gem Version][1]][2]
+[![Continuous Integration Status][3]][4]
+[![Coverage Status][5]][6]
+[![CodePolice][7]][8]
+[![Dependency Status][9]][10]
+
 A user who runs a search tool against a text would find 
 multiple text fragments corresponding to the search.
 These fragments can be found again by storing their 
@@ -44,9 +50,19 @@ Contributing
 Copyright
 ---------
 
-Authors: [Dmitry Mozzherin][1], 
+Authors: [Dmitry Mozzherin][11] 
 
 Copyright (c) 2013 Marine Biological Laboratory. See LICENSE for
 further details.
 
-[1]: https://github.com/dimus
+[1]: https://badge.fury.io/rb/tag_along.png
+[2]: http://badge.fury.io/rb/tag_along
+[3]: https://secure.travis-ci.org/GlobalNamesArchitecture/tag_along.png
+[4]: http://travis-ci.org/GlobalNamesArchitecture/tag_along
+[5]: https://coveralls.io/repos/GlobalNamesArchitecture/tag_along/badge.png?branch=master
+[6]: https://coveralls.io/r/GlobalNamesArchitecture/tag_along?branch=master
+[7]: https://codeclimate.com/github/GlobalNamesArchitecture/tag_along.png
+[8]: https://codeclimate.com/github/GlobalNamesArchitecture/tag_along
+[9]: https://gemnasium.com/GlobalNamesArchitecture/tag_along.png
+[10]: https://gemnasium.com/GlobalNamesArchitecture/tag_along
+[11]: https://github.com/dimus
