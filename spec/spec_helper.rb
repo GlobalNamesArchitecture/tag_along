@@ -1,3 +1,6 @@
+require 'coveralls'
+Coveralls.wear!
+
 require 'json'
 require 'ostruct'
 require_relative '../lib/tag_along'

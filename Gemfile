@@ -11,7 +11,7 @@ group :test do
   gem 'rake', '~> 10.1'
   gem 'rspec', '~> 2.14'
   gem 'rr', '~> 1.1'
-  gem 'coveral', '~> 0.6'
+  gem 'coveralls', '~> 0.6'
 end
   
 
