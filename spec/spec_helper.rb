@@ -27,7 +27,7 @@ end
 
 unless defined?(SPEC_VARS)
   FILES_DIR = File.expand_path(File.join(File.dirname(__FILE__), 'files'))
-  CONTENT, OFFSET_ARY, OFFSET_HASH, OFFSET_OBJ = 
+  TEXT, OFFSET_ARY, OFFSET_HASH, OFFSET_OBJ = 
     TagAlongSpec.process_spec_data(FILES_DIR)
   SPEC_VARS = true
 end
