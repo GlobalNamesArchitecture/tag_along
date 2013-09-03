@@ -1,3 +1,6 @@
+0.6.1 -- fixed a bug which would crash the gem if an object without
+         item_string is entered
+
 0.6.0 -- first functional release, not tested in production
 
 0.0.1 -- initial unonfunctional placeholder
