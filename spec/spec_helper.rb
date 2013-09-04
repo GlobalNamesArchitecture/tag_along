@@ -3,7 +3,7 @@ Coveralls.wear!
 
 require 'json'
 require 'ostruct'
-require_relative '../lib/tag_along'
+require 'tag_along'
 
 RSpec.configure do |c|
   c.mock_with :rr
