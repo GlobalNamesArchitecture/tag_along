@@ -40,7 +40,7 @@ For example you want to tag days of week from a text:
 
 To add tags to a text:
 
-    offsets = [[8,13], [27,32]]
+    offsets = [[8, 13], [27, 32]]
     tg = TagAlong.new(text, offsets)
     
     tg.tag('<my_tag>', '</my_tag>')
@@ -53,18 +53,43 @@ To add tags to a text:
 
 Notice that you can retag the text as many times as you want.
 
+### Dynamic tags
+
+Sometimes you tags contain changeable component. To add dynamic data to tags:
+
+    #one substitution in opening tag:
+    offsets = [[8, 13, 'sunday'], [27, 32, 'monday']
+    tg.tag("<my_tag value=\"%s\">", '</my_tag>')
+    puts tg.tagged_text
+    # There's <my_tag value="sunday">Sunday</my_tag> \
+    # and there's <my_tag value="monday">Monday</my_tag>
+    
+    #one substitution in closing tag tag:
+    offsets = [[8, 13, nil, 'sunday'], [27, 32, nil, 'monday']
+    tg.tag('<my_tag', "</my_tag value=\"%s\">")
+    puts tg.tagged_text
+    # There's <my_tag>Sunday</my_tag value="sunday"> \
+    # and there's <my_tag>Monday</my_tag value="monday">
+
+    #several substitutions
+    offsets = [[8, 13, nil, ['sunday', 'http://en.wikipedia.org/wiki/Sunday'],
+      [27, 32, nil, ['monday', http://en.wikipedia.org/wiki/Monday']]
+
+    tg.tag("<my_tag value=\"%s\", url=\"%s\">", '</my_tag>')
+
+
 ### Offsets
   
 To prepare offsets from an arbitrary object:
     
     # Array of arrays
-    my_ary = [[8,13], [27,32]]
+    my_ary = [[8, 13], [27, 32]]
     offsets = TagAlong::Offsets.new(my_ary)
 
     # Array of hashes
-    my_hash = [{ start: 8, end:13 }, { start:27, end:32 }]
+    my_hash = [{ start: 8, end: 13 }, { start: 27, end: 32 }]
     offsets = TagAlong::Offsets.new(my_hash,
-                                    offset_start: 'start'
+                                    offset_start: 'start',
                                     offset_end: 'end')
     or
     offsets = TagAlong::Offsets.new(my_hash,
@@ -82,6 +107,70 @@ In all cases you can instantiate TagAlong with resulting offsets:
 
     tg = TagAlong.new(text, offsets)
     tg.tag('|hi|', '|bye|')
+
+Examples of dynamic tags:
+
+    # Array of arrays
+    my_ary = [[8, 13, ['sunday', 'http://en.wikipedia.org/wiki/Sunday']], 
+      [27, 32, ['monday', 'http://en.wikipedia.org/wiki/Monday']]]
+    offsets = TagAlong::Offsets.new(my_ary)
+
+    # Array of hashes
+    my_hash = [
+      { start: 8, 
+        end: 13, 
+        subst: ['sunday', 'http://en.wikipedia.org/wiki/Sunday'] }, 
+      { start: 27, 
+        end: 32,
+        subst: ['monday', 'http://en.wikipedia.org/wiki/Monday'] }
+      ]
+    offsets = TagAlong::Offsets.new(my_hash,
+                                    offset_start: 'start',
+                                    offset_end: 'end',
+                                    data_start: 'subst')
+    or
+    offsets = TagAlong::Offsets.new(my_hash,
+                                    offset_start: :start,
+                                    offset_end: :end,
+                                    data_start: :subst)
+
+    # Array of objects
+    require 'ostruct'
+    my_obj = [OpenStruct.new(s: 8, 
+                             e: 13, 
+                             values: ['sunday', 
+                                      'http://en.wikipedia.org/wiki/Sunday']),
+              OpenStruct.new(s: 27, 
+                             e: 32, 
+                             values: ['monday', 
+                                      'http://en.wikipedia.org/wiki/Monday'])]
+    offsets = TagAlong::Offsets.new(my_obj,
+                                    offset_start: :s,
+                                    offset_end: :e,
+                                    data_start: :values)
+
+In all cases you can instantiate TagAlong with resulting offsets:
+
+    tg = TagAlong.new(text, offsets)
+    tg.tag("<my_tag value=\"%s\", href=\"%s\">", '</my_tag>')
+
+Example of dynamic information in a closing tag:
+
+    # Array of hashes
+    my_hash = [
+      { start: 8, 
+        end: 13, 
+        subst: 'sunday' }, 
+      { start: 27, 
+        end: 32,
+        subst: 'monday' }
+      ]
+    offsets = TagAlong::Offsets.new(my_hash,
+                                    offset_start: 'start',
+                                    offset_end: 'end',
+                                    data_end: 'subst')
+    tg = TagAlong.new(text, offsets)
+    tg.tag('<my_tag>', "</my_tag value=\"%s\">")
 
 Contributing
 ------------
