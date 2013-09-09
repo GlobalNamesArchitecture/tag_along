@@ -16,9 +16,9 @@ module TagAlongSpec
     text = data[:content]
     offset_hash = data[:names]
     offset_obj = offset_hash.map do |h| 
-      OpenStruct.new(name: h[:verbatim],
+      OpenStruct.new(name:  h[:verbatim],
                      start: h[:offsetStart],
-                     end: h[:offsetEnd])
+                     end:   h[:offsetEnd])
     end
     offset_ary = offset_obj.map { |h| [h.start, h.end] }
     [text, offset_ary, offset_hash, offset_obj]

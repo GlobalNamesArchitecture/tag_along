@@ -8,7 +8,6 @@ class TagAlong
       @offsets      = offsets
       @offset_start = (opts[:offset_start] || 'offset_start').to_sym
       @offset_end   = (opts[:offset_end]   || 'offset_end').to_sym
-      @item_string   = (opts[:item_string]  || 'item_string').to_sym
       
       item = @offsets.first
       if item.is_a?(Array)
@@ -32,33 +31,27 @@ class TagAlong
       @offsets = @offsets.map do |o|
         offset_start = o[0]
         offset_end = o[1]
-        item_string = o[2]
-        instantiate(offset_start, offset_end, item_string) 
+        instantiate(offset_start, offset_end) 
       end
     end
 
     def process_hash
       @offsets.each { |h| symbolize_keys(h) }
       @offsets = @offsets.map do |o|
-        instantiate(o[@offset_start], o[@offset_end], o[@item_string]) 
+        instantiate(o[@offset_start], o[@offset_end]) 
       end
     end
 
     def process_obj
       @offsets = @offsets.map do |o|
-        item_string = o.respond_to?(@item_string) ? 
-          o.send(@item_string) :
-          nil
         instantiate(o.send(@offset_start), 
-                    o.send(@offset_end), 
-                    item_string) 
+                    o.send(@offset_end),) 
       end
     end
     
-    def instantiate(offset_start, offset_end, item_string)
+    def instantiate(offset_start, offset_end)
       OpenStruct.new(offset_start: to_int(offset_start),
-                     offset_end:   to_int(offset_end),
-                     item_string:  item_string)
+                     offset_end:   to_int(offset_end),)
     end
 
     def to_int(val)
