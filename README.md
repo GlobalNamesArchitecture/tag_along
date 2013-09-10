@@ -14,7 +14,7 @@ start and end offsets. This gem places arbitrary
 markup tags surrounding the fragments.
 
 Gem works with UTF-8 and ASCII7 texts. It is quite fast and allows to tag
-4MB of text in one second on 2.7GHz processor.
+4MB of text in about one second on 2.7GHz processor.
 
 Installation
 ------------
@@ -34,7 +34,7 @@ Or install it yourself as:
 Usage
 -----
 
-For example you want to tag days of week from a text:
+For example you want to tag days of a week from a text:
 
     text = "There's Sunday and there's Monday"
 
@@ -55,7 +55,7 @@ Notice that you can retag the text as many times as you want.
 
 ### Dynamic tags
 
-Sometimes you tags contain changeable component. To add dynamic data to tags:
+Sometimes tags contain changeable component. To add dynamic data to tags:
 
     #one substitution in opening tag:
     offsets = [[8, 13, 'sunday'], [27, 32, 'monday']
@@ -108,7 +108,7 @@ In all cases you can instantiate TagAlong with resulting offsets:
     tg = TagAlong.new(text, offsets)
     tg.tag('|hi|', '|bye|')
 
-Examples of dynamic tags:
+Examples of offsets with dynamic data:
 
     # Array of arrays
     my_ary = [[8, 13, ['sunday', 'http://en.wikipedia.org/wiki/Sunday']], 
@@ -154,7 +154,7 @@ In all cases you can instantiate TagAlong with resulting offsets:
     tg = TagAlong.new(text, offsets)
     tg.tag("<my_tag value=\"%s\", href=\"%s\">", '</my_tag>')
 
-Example of dynamic information in a closing tag:
+Example of dynamic information for a closing tag:
 
     # Array of hashes
     my_hash = [
