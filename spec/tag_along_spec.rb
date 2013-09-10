@@ -22,7 +22,7 @@ describe TagAlong do
     tg.tagged_text.should 
       include('<another_tag>Lebistes reticulatus</another_tag>')
   end
-
+  
   it 'should tag' do
     text = 'There\'s Sunday and there\'s Monday'
     offsets = [[8,13], [27,32]]
@@ -30,4 +30,28 @@ describe TagAlong do
     tg.tag('<em>', '</em>').should == 
       %q{There's <em>Sunday</em> and there's <em>Monday</em>}
   end
+
+  it 'should tag dynamicly' do
+    tg = TagAlong.new(TEXT, OFFSETS_ARY)
+    tagged_text = tg.tag("<my_tag name=\"%s\">", '</my_tag>')
+    tg.tagged_text.should == tagged_text
+    tg.tagged_text.should include('<my_tag name="Lebistes reticulatus">' + 
+                                  'Lebistes reticulatus</my_tag>')
+  end
+
+  it 'should tag dynamicly end tag' do
+    offsets = OFFSETS_ARY.each {|i| i.insert(-2, nil)}
+    tg = TagAlong.new(TEXT, OFFSETS_ARY)
+    tagged_text = tg.tag('<my_tag>', "</my_tag name=\"%s\">")
+    tg.tagged_text.should == tagged_text
+    tg.tagged_text.should include("</my_tag name=\"Pundulus\">")
+  end
+  
+  it 'should break dynamic taging if there is problem with data' do
+    offsets = OFFSETS_ARY.each {|i| i.insert(-2, nil)}
+    tg = TagAlong.new(TEXT, OFFSETS_ARY)
+    -> { tg.tag('<my_tag>', "</my_tag val=\"%s\" name=\"%s\">") }.
+      should raise_error
+  end
+
 end

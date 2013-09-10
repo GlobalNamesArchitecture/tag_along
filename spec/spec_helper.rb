@@ -20,7 +20,7 @@ module TagAlongSpec
                      start: h[:offsetStart],
                      end:   h[:offsetEnd])
     end
-    offset_ary = offset_obj.map { |h| [h.start, h.end] }
+    offset_ary = offset_obj.map { |h| [h.start, h.end, h.name] }
     [text, offset_ary, offset_hash, offset_obj]
   end
 end

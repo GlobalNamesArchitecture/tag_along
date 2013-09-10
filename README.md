@@ -172,6 +172,11 @@ Example of dynamic information in a closing tag:
     tg = TagAlong.new(text, offsets)
     tg.tag('<my_tag>', "</my_tag value=\"%s\">")
 
+Versioning
+----------
+
+This gem is following practices of [Semantic Versioning][11]
+
 Contributing
 ------------
 
@@ -184,7 +189,7 @@ Contributing
 Copyright
 ---------
 
-Authors: [Dmitry Mozzherin][11] 
+Authors: [Dmitry Mozzherin][12] 
 
 Copyright (c) 2013 Marine Biological Laboratory. See LICENSE for
 further details.
@@ -199,4 +204,5 @@ further details.
 [8]: https://codeclimate.com/github/GlobalNamesArchitecture/tag_along
 [9]: https://gemnasium.com/GlobalNamesArchitecture/tag_along.png
 [10]: https://gemnasium.com/GlobalNamesArchitecture/tag_along
-[11]: https://github.com/dimus
+[11]: http://semver.org/
+[12]: https://github.com/dimus
