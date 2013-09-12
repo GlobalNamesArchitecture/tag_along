@@ -42,20 +42,21 @@ class TagAlong
 
     def process_hash
       @offsets.each { |h| symbolize_keys(h) }
-      @offsets = @offsets.map do |o|
-        instantiate(o[@offset_start], 
-                    o[@offset_end],
-                    o[@data_start],
-                    o[@data_end]) 
+      @offsets = @offsets.map do |h|
+        instantiate(h[@offset_start], 
+                    h[@offset_end],
+                    h[@data_start],
+                    h[@data_end]) 
       end
     end
 
     def process_obj
-      @offsets = @offsets.map do |o|
-        instantiate(o.send(@offset_start), 
-                    o.send(@offset_end),
-                    o.send(@data_start),
-                    o.send(@data_end)) 
+      @offsets = @offsets.map do |obj|
+        offset_start = obj.send(@offset_start)
+        offset_end = obj.send(@offset_end)
+        data_start = obj.send(@data_start)
+        data_end = obj.send(@data_end)
+        instantiate(offset_start, offset_end, data_start, data_end) 
       end
     end
     

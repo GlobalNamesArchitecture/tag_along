@@ -50,44 +50,36 @@ class TagAlong
   end
   
   def process_tagged_item(res, item, opts)
+    fragment = []
     chars_num = item.offset_start - opts[:cursor]
-    chars_num.times { opts[:fragment] << opts[:text_ary].shift }
-    res << { tagged: false, text: opts[:fragment] }
-    opts[:fragment] = []
+    chars_num.times { fragment << opts[:text_ary].shift }
+    res << { tagged: false, text: fragment }
+    fragment = []
     opts[:cursor] = item.offset_start
     chars_num = item.offset_end + 1 - opts[:cursor]
-    chars_num.times { opts[:fragment] << opts[:text_ary].shift }
+    chars_num.times { fragment << opts[:text_ary].shift }
     res << { tagged:     true, 
-             text:       opts[:fragment], 
+             text:       fragment, 
              data_start: item.data_start,
              data_end:   item.data_end}
-    opts[:fragment] = []
     opts[:cursor] = item.offset_end + 1
   end
 
-      
   def split_text
-    return  if @split_text
-    opts = {   
-      text_ary: @text.unpack('U*'),
-      cursor: 0,
-      fragment: [],
-    }
-    res = @offsets.inject([]) do |res, item|
+    @split_text ||= create_split_text
+  end
+
+  def create_split_text
+    opts = { text_ary: @text.unpack('U*'), cursor: 0 }
+
+    @split_text = @offsets.inject([]) do |res, item|
       process_tagged_item(res, item, opts)
       res
     end
-  
-    unless opts[:text_ary].empty?
-      res << { tagged: false,
-               text: opts[:text_ary]} 
-    end
-             
-
-    res.each do |r|
+    @split_text << { tagged: false, text: opts[:text_ary] }
+    @split_text.each do |r|
       r[:text] = r[:text].pack('U*')
     end
-    @split_text = res
   end
 
 end
