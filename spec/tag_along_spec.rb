@@ -62,4 +62,12 @@ describe TagAlong do
       %q{There's <em>Sunday</em> and there's <em>Monday</em>}
   end
 
+  it 'should preserve the end of the text' do
+    text = 'There\'s Sunday and there\'s Monday for sure'
+    offsets = [[27,32], [8,13]]
+    tg = TagAlong.new(text, offsets)
+    tg.tag('<em>', '</em>').should == 
+      %q{There's <em>Sunday</em> and there's <em>Monday</em> for sure}
+  end
+
 end

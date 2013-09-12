@@ -62,6 +62,12 @@ class TagAlong
       fragment = []
       cursor = item.offset_end + 1
     end
+    
+    unless text_ary.empty?
+      res << { tagged: false,
+               text: text_ary } 
+    end
+             
 
     res.each do |r|
       r[:text] = r[:text].pack('U*')
