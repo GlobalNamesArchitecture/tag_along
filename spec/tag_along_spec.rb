@@ -54,4 +54,12 @@ describe TagAlong do
       should raise_error
   end
 
+  it 'should take offsets in any order' do
+    text = 'There\'s Sunday and there\'s Monday'
+    offsets = [[27,32], [8,13]]
+    tg = TagAlong.new(text, offsets)
+    tg.tag('<em>', '</em>').should == 
+      %q{There's <em>Sunday</em> and there's <em>Monday</em>}
+  end
+
 end

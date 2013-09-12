@@ -19,6 +19,7 @@ class TagAlong
       else 
         process_obj
       end
+      @offsets.sort_by!(&:offset_start)
     end
 
     def each(&block)
