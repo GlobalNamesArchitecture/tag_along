@@ -19,53 +19,68 @@ class TagAlong
   end
 
   def tag(open_tag, close_tag)
-    open_tag_subs = open_tag.scan(/%s/).size
-    close_tag_subs = close_tag.scan(/%s/).size
+    opts = {
+      open_tag: open_tag,
+      close_tag: close_tag,
+      open_tag_subs: open_tag.scan(/%s/).size,
+      close_tag_subs: close_tag.scan(/%s/).size,
+    }
     @tagged_text = @split_text.inject([]) do |res, t|
-      if t[:tagged]
-        ot = dyn_tag(open_tag, t[:data_start], open_tag_subs) 
-        ct = dyn_tag(close_tag, t[:data_end], close_tag_subs)
-        [ot, t[:text], ct].each { |text| res << text }
-      else
-        res << t[:text]
-      end
+      process_tag(res, t, opts)
       res
     end.join('')
   end
 
   private
 
+  def process_tag(text_ary, text_fragment, opts)
+    t = text_fragment
+    if t[:tagged]
+      ot = dyn_tag(opts[:open_tag], t[:data_start], opts[:open_tag_subs]) 
+      ct = dyn_tag(opts[:close_tag], t[:data_end], opts[:close_tag_subs])
+      [ot, t[:text], ct].each { |text| text_ary << text }
+    else
+      text_ary << t[:text]
+    end
+  end
+
   def dyn_tag(tag, data, subs_num)
     return tag if subs_num == 0
     tag % data
   end
+  
+  def process_tagged_item(res, item, opts)
+    chars_num = item.offset_start - opts[:cursor]
+    chars_num.times { opts[:fragment] << opts[:text_ary].shift }
+    res << { tagged: false, text: opts[:fragment] }
+    opts[:fragment] = []
+    opts[:cursor] = item.offset_start
+    chars_num = item.offset_end + 1 - opts[:cursor]
+    chars_num.times { opts[:fragment] << opts[:text_ary].shift }
+    res << { tagged:     true, 
+             text:       opts[:fragment], 
+             data_start: item.data_start,
+             data_end:   item.data_end}
+    opts[:fragment] = []
+    opts[:cursor] = item.offset_end + 1
+  end
 
+      
   def split_text
     return  if @split_text
-    
-    text_ary = @text.unpack('U*')
-    cursor = 0
-    fragment = []
-    res = []
-    @offsets.each do |item|
-      chars_num = item.offset_start - cursor
-      chars_num.times { fragment << text_ary.shift }
-      res << { tagged: false, text: fragment }
-      fragment = []
-      cursor = item.offset_start
-      chars_num = item.offset_end + 1 - cursor
-      chars_num.times { fragment << text_ary.shift }
-      res << { tagged:     true, 
-               text:       fragment, 
-               data_start: item.data_start,
-               data_end:   item.data_end}
-      fragment = []
-      cursor = item.offset_end + 1
+    opts = {   
+      text_ary: @text.unpack('U*'),
+      cursor: 0,
+      fragment: [],
+    }
+    res = @offsets.inject([]) do |res, item|
+      process_tagged_item(res, item, opts)
+      res
     end
-    
-    unless text_ary.empty?
+  
+    unless opts[:text_ary].empty?
       res << { tagged: false,
-               text: text_ary } 
+               text: opts[:text_ary]} 
     end
              
 
