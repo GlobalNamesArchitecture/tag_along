@@ -1,6 +1,3 @@
-require 'polyglot'
-require 'treetop'
-
 class TagAlong
 
   class TaggedText
