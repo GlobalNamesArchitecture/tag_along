@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'json', '~> 1.7'
+gem 'treetop', '~> 1.4'
 
 group :development do
   gem 'bundler', '~> 1.3'

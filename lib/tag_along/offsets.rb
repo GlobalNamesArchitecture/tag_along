@@ -10,13 +10,13 @@ class TagAlong
       @offset_end   = (opts[:offset_end]   || 'offset_end').to_sym
       @data_start   = (opts[:data_start]   || 'data_start').to_sym
       @data_end     = (opts[:data_end]     || 'data_end').to_sym
-      
+
       item = @offsets.first
       if item.is_a?(Array)
         process_array
       elsif item.is_a?(Hash)
         process_hash
-      else 
+      else
         process_obj
       end
       @offsets.sort_by!(&:offset_start)
@@ -28,6 +28,25 @@ class TagAlong
       end
     end
 
+    def [](num)
+      @offsets[num]
+    end
+
+    def shift
+      @offsets.shift
+    end
+
+    def empty?
+      @offsets.empty?
+    end
+
+    def << offset
+      unless offset.respond_to?(:offset_start) && offset.respond_to?(:offset_end)
+        raise TypeError.new('Object does not match Offset signature')
+      end
+      @offsets << offset
+    end
+
     private
 
     def process_array
@@ -36,17 +55,17 @@ class TagAlong
         offset_end = o[1]
         data_start = o[2]
         data_end = o[3]
-        instantiate(offset_start, offset_end, data_start, data_end) 
+        instantiate(offset_start, offset_end, data_start, data_end)
       end
     end
 
     def process_hash
       @offsets.each { |h| symbolize_keys(h) }
       @offsets = @offsets.map do |h|
-        instantiate(h[@offset_start], 
+        instantiate(h[@offset_start],
                     h[@offset_end],
                     h[@data_start],
-                    h[@data_end]) 
+                    h[@data_end])
       end
     end
 
@@ -56,10 +75,10 @@ class TagAlong
         offset_end = obj.send(@offset_end)
         data_start = obj.send(@data_start)
         data_end = obj.send(@data_end)
-        instantiate(offset_start, offset_end, data_start, data_end) 
+        instantiate(offset_start, offset_end, data_start, data_end)
       end
     end
-    
+
     def instantiate(offset_start, offset_end, data_start = nil, data_end = nil)
       data_start = data_to_ary(data_start)
       data_end = data_to_ary(data_end)
@@ -85,7 +104,7 @@ class TagAlong
         a_hash[(key.to_sym rescue key) || key] = a_hash.delete(key)
       end
     end
-    
+
   end
 
 end

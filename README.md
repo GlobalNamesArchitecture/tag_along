@@ -53,6 +53,34 @@ To add tags to a text:
 
 Notice that you can retag the text as many times as you want.
 
+### Tagging html converted to plain text
+
+Sometimes it is necessary to convert html text to plain text to make sure that
+search items are not separated by html tags. For situations like this gem
+creates an intermediary structure which 'remembers' position of html tags and
+recreates correct offsets from offsets of the plain text.
+
+    html_text = "
+    <html>
+      <head>
+        <title>Days of the week</title>
+      </head>
+      <body>
+        <p>
+        There's <strong>Sunday</strong>
+        and there's <strong>Monday</strong>
+        </p>
+      </body>
+    </html>
+    "
+    tt = TagAlong::TaggedText.new(html_text)
+    text = hc.plain_text(normalize_spaces: true)
+    # returns "There's Sunday and there's Monday"
+    text_offsets = [[8, 13], [27, 32]]
+    html_offsets = hc.adjust_offsets(text_offsets)
+    tg = TagAlong.new(html_text, html_offsets)
+    tg.tag('<my_tag>', '</my_tag>')
+
 ### Dynamic tags
 
 Sometimes tags contain changeable component. To add dynamic data to tags:

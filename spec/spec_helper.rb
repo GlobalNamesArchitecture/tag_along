@@ -29,5 +29,18 @@ unless defined?(SPEC_VARS)
   FILES_DIR = File.expand_path(File.join(File.dirname(__FILE__), 'files'))
   TEXT, OFFSETS_ARY, OFFSETS_HASH, OFFSETS_OBJ = 
     TagAlongSpec.process_spec_data(FILES_DIR)
+  HTML_TEXT = "
+    <html>
+      <head>
+        <title>Days of the week</title>
+      </head>
+      <body>
+        <p>
+        There's <strong>Sunday</strong>
+        and there's <strong>Monday</strong>
+        </p>
+      </body>
+    </html>
+    "
   SPEC_VARS = true
 end

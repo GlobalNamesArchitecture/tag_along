@@ -1,10 +1,10 @@
 require 'ostruct'
 require 'tag_along/version'
 require 'tag_along/offsets'
+require 'tag_along/tagged_text'
 
 class TagAlong
-
-  attr :text, :tagged_text
+attr :text, :tagged_text
 
   def self.version
     VERSION
