@@ -1,3 +1,6 @@
+0.8.0 -- getting plain text from html/xml and readjusting offsets 
+         to full version
+
 0.7.3 -- removed junk files plus refactoring
 
 0.7.2 -- end of the text preserved
