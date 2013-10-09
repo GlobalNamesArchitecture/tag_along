@@ -49,7 +49,7 @@ class TagAlong
     def process_offset(plain_text_offsets, offset, adjusted_offsets)
       o  = plain_text_offsets[0]
 
-      return if o.offset_start > offset[:text_start]
+      return if !o || o.offset_start > offset[:text_start]
       unless o.adj_start
         delta = o.offset_start - offset[:text_start]
         o.adj_start = offset[:start] + delta

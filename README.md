@@ -74,7 +74,7 @@ recreates correct offsets from offsets of the plain text.
     </html>
     "
     tt = TagAlong::TaggedText.new(html_text)
-    text = hc.plain_text
+    text = tt.plain_text
     # returns "There's Sunday and there's Monday" with lots of space junk
     text_offsets = [[8, 13], [27, 32]]
     html_offsets = hc.adjust_offsets(text_offsets)
