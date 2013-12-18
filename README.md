@@ -219,7 +219,7 @@ Copyright
 
 Authors: [Dmitry Mozzherin][12] 
 
-Copyright (c) 2013 Marine Biological Laboratory. See LICENSE for
+Copyright (c) 2013-2014 Marine Biological Laboratory. See LICENSE for
 further details.
 
 [1]: https://badge.fury.io/rb/tag_along.png

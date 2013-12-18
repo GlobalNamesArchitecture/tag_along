@@ -1,0 +1,429 @@
+{
+  "token_url": "http://gnrd.globalnames.org/name_finder.json?token=HItGspswQzyZHvrrEMfhzA",
+  "input_url": null,
+  "file": "embryo129157.xhtml.txt",
+  "status": 200,
+  "engines": [
+    "TaxonFinder",
+    "NetiNeti"
+  ],
+  "unique": false,
+  "verbatim": true,
+  "english": true,
+  "execution_time": {
+    "find_names_duration": 0.614200308,
+    "resolve_names_duration": 1.710323566,
+    "total_duration": 2.576524113
+  },
+  "agent": "",
+  "created": "2013-10-09T08:18:15-04:00",
+  "total": 17,
+  "names": [
+    {
+      "verbatim": "Agama",
+      "scientificName": "Agama",
+      "offsetStart": 2282,
+      "offsetEnd": 2286,
+      "identifiedName": "Agama"
+    },
+    {
+      "verbatim": "Agama agama",
+      "scientificName": "Agama agama",
+      "offsetStart": 2298,
+      "offsetEnd": 2308,
+      "identifiedName": "Agama agama"
+    },
+    {
+      "verbatim": "Emys orbicularis",
+      "scientificName": "Emys orbicularis",
+      "offsetStart": 3166,
+      "offsetEnd": 3181,
+      "identifiedName": "Emys orbicularis"
+    },
+    {
+      "verbatim": "Testudo graeca",
+      "scientificName": "Testudo graeca",
+      "offsetStart": 3221,
+      "offsetEnd": 3234,
+      "identifiedName": "Testudo graeca"
+    },
+    {
+      "verbatim": "Pesquisas da",
+      "scientificName": "Pesquisas da",
+      "offsetStart": 4158,
+      "offsetEnd": 4169,
+      "identifiedName": "Pesquisas da"
+    },
+    {
+      "verbatim": "(Agamidae:",
+      "scientificName": "Agamidae",
+      "offsetStart": 7697,
+      "offsetEnd": 7706,
+      "identifiedName": "Agamidae"
+    },
+    {
+      "verbatim": "Agama agama",
+      "scientificName": "Agama agama",
+      "offsetStart": 7765,
+      "offsetEnd": 7775,
+      "identifiedName": "Agama agama"
+    },
+    {
+      "verbatim": "(Agamidae:",
+      "scientificName": "Agamidae",
+      "offsetStart": 7777,
+      "offsetEnd": 7786,
+      "identifiedName": "Agamidae"
+    },
+    {
+      "verbatim": "Lacertilia)",
+      "scientificName": "Lacertilia",
+      "offsetStart": 7788,
+      "offsetEnd": 7798,
+      "identifiedName": "Lacertilia"
+    },
+    {
+      "verbatim": "(Testudo graeca",
+      "scientificName": "Testudo graeca",
+      "offsetStart": 8592,
+      "offsetEnd": 8606,
+      "identifiedName": "Testudo graeca"
+    },
+    {
+      "verbatim": "Emys orbicularis",
+      "scientificName": "Emys orbicularis",
+      "offsetStart": 8614,
+      "offsetEnd": 8629,
+      "identifiedName": "Emys orbicularis"
+    },
+    {
+      "verbatim": "Genitales",
+      "scientificName": "Genitales",
+      "offsetStart": 8946,
+      "offsetEnd": 8954,
+      "identifiedName": "Genitales"
+    },
+    {
+      "verbatim": "Emys orbicularis",
+      "scientificName": "Emys orbicularis",
+      "offsetStart": 8994,
+      "offsetEnd": 9009,
+      "identifiedName": "Emys orbicularis"
+    },
+    {
+      "verbatim": "Testudo graeca",
+      "scientificName": "Testudo graeca",
+      "offsetStart": 9017,
+      "offsetEnd": 9030,
+      "identifiedName": "Testudo graeca"
+    },
+    {
+      "verbatim": "Emys orbicularis",
+      "scientificName": "Emys orbicularis",
+      "offsetStart": 9127,
+      "offsetEnd": 9142,
+      "identifiedName": "Emys orbicularis"
+    },
+    {
+      "verbatim": "Testudo graeca]",
+      "scientificName": "Testudo graeca",
+      "offsetStart": 9148,
+      "offsetEnd": 9162,
+      "identifiedName": "Testudo graeca"
+    },
+    {
+      "verbatim": "Eublepharis macularius.”",
+      "scientificName": "Eublepharis macularius",
+      "offsetStart": 9879,
+      "offsetEnd": 9902,
+      "identifiedName": "Eublepharis macularius"
+    }
+  ],
+  "data_sources": [
+
+  ],
+  "context": null,
+  "resolved_names": [
+    {
+      "supplied_name_string": "Agama",
+      "results": [
+        {
+          "data_source_id": 1,
+          "data_source_title": "Catalogue of Life",
+          "gni_uuid": "a4be83b4-b760-53c0-8177-097ef52622f2",
+          "name_string": "Agama",
+          "canonical_form": "Agama",
+          "classification_path": "Animalia|Chordata|Reptilia|Squamata|Agamidae|Agama",
+          "classification_path_ranks": "kingdom|phylum|class|order|family|genus",
+          "classification_path_ids": "2362377|2362754|2362907|2363418|2363623|2380802",
+          "taxon_id": "2380802",
+          "match_type": 1,
+          "prescore": "1|0|0",
+          "score": 0.75
+        }
+      ],
+      "preferred_results": [
+        {
+          "data_source_id": 12,
+          "data_source_title": "EOL",
+          "gni_uuid": "a4be83b4-b760-53c0-8177-097ef52622f2",
+          "name_string": "Agama",
+          "canonical_form": "Agama",
+          "classification_path": "",
+          "classification_path_ranks": "",
+          "classification_path_ids": "",
+          "taxon_id": "20627551",
+          "local_id": "17789",
+          "url": "http://eol.org/pages/17789",
+          "match_type": 1,
+          "prescore": "1|0|0",
+          "score": 0.75
+        }
+      ],
+      "data_sources_number": 14,
+      "in_curated_sources": true
+    },
+    {
+      "supplied_name_string": "Agama agama",
+      "results": [
+        {
+          "data_source_id": 4,
+          "data_source_title": "NCBI",
+          "gni_uuid": "6f3e0438-ec7b-5cd1-b314-61719c6f732f",
+          "name_string": "Agama agama",
+          "canonical_form": "Agama agama",
+          "classification_path": "|Eukaryota|Opisthokonta|Metazoa|Eumetazoa|Bilateria|Coelomata|Deuterostomia|Chordata|Craniata|Vertebrata|Gnathostomata|Teleostomi|Euteleostomi|Sarcopterygii|Tetrapoda|Amniota|Sauropsida|Sauria|Lepidosauria|Squamata|Iguania|Acrodonta|Agamidae|Agaminae|Agama|Agama agama",
+          "classification_path_ranks": "|superkingdom||kingdom|||||phylum|subphylum||superclass||||||||superorder|order|suborder||family|subfamily|genus|species",
+          "classification_path_ids": "131567|2759|33154|33208|6072|33213|33316|33511|7711|89593|7742|7776|117570|117571|8287|32523|32524|8457|32561|8504|8509|8511|83232|81953|81954|52207|103336",
+          "taxon_id": "103336",
+          "match_type": 1,
+          "prescore": "3|0|0",
+          "score": 0.988
+        }
+      ],
+      "preferred_results": [
+        {
+          "data_source_id": 12,
+          "data_source_title": "EOL",
+          "gni_uuid": "6f3e0438-ec7b-5cd1-b314-61719c6f732f",
+          "name_string": "Agama agama",
+          "canonical_form": "Agama agama",
+          "classification_path": "",
+          "classification_path_ranks": "",
+          "classification_path_ids": "",
+          "taxon_id": "20627552",
+          "local_id": "815935",
+          "url": "http://eol.org/pages/815935",
+          "match_type": 1,
+          "prescore": "3|0|0",
+          "score": 0.988
+        }
+      ],
+      "data_sources_number": 15,
+      "in_curated_sources": true
+    },
+    {
+      "supplied_name_string": "Emys orbicularis",
+      "results": [
+        {
+          "data_source_id": 4,
+          "data_source_title": "NCBI",
+          "gni_uuid": "11cc8ad3-42d3-5430-9b97-ccc13f7ca359",
+          "name_string": "Emys orbicularis",
+          "canonical_form": "Emys orbicularis",
+          "classification_path": "|Eukaryota|Opisthokonta|Metazoa|Eumetazoa|Bilateria|Coelomata|Deuterostomia|Chordata|Craniata|Vertebrata|Gnathostomata|Teleostomi|Euteleostomi|Sarcopterygii|Tetrapoda|Amniota|Sauropsida|Testudines|Cryptodira|Testudinoidea|Emydidae|Emys|Emys orbicularis",
+          "classification_path_ranks": "|superkingdom||kingdom|||||phylum|subphylum||superclass|||||||order|suborder|superfamily|family|genus|species",
+          "classification_path_ids": "131567|2759|33154|33208|6072|33213|33316|33511|7711|89593|7742|7776|117570|117571|8287|32523|32524|8457|8459|8464|8486|8476|82167|82168",
+          "taxon_id": "82168",
+          "match_type": 1,
+          "prescore": "3|0|0",
+          "score": 0.988
+        }
+      ],
+      "preferred_results": [
+        {
+          "data_source_id": 12,
+          "data_source_title": "EOL",
+          "gni_uuid": "11cc8ad3-42d3-5430-9b97-ccc13f7ca359",
+          "name_string": "Emys orbicularis",
+          "canonical_form": "Emys orbicularis",
+          "classification_path": "",
+          "classification_path_ranks": "",
+          "classification_path_ids": "",
+          "taxon_id": "20629669",
+          "local_id": "1056912",
+          "url": "http://eol.org/pages/1056912",
+          "match_type": 1,
+          "prescore": "3|0|0",
+          "score": 0.988
+        }
+      ],
+      "data_sources_number": 20,
+      "in_curated_sources": true
+    },
+    {
+      "supplied_name_string": "Testudo graeca",
+      "results": [
+        {
+          "data_source_id": 4,
+          "data_source_title": "NCBI",
+          "gni_uuid": "199b3aad-5777-56ba-bb10-8cf284e9d152",
+          "name_string": "Testudo graeca",
+          "canonical_form": "Testudo graeca",
+          "classification_path": "|Eukaryota|Opisthokonta|Metazoa|Eumetazoa|Bilateria|Coelomata|Deuterostomia|Chordata|Craniata|Vertebrata|Gnathostomata|Teleostomi|Euteleostomi|Sarcopterygii|Tetrapoda|Amniota|Sauropsida|Testudines|Cryptodira|Testudinoidea|Testudinidae|Testudo|Testudo graeca",
+          "classification_path_ranks": "|superkingdom||kingdom|||||phylum|subphylum||superclass|||||||order|suborder|superfamily|family|genus|species",
+          "classification_path_ids": "131567|2759|33154|33208|6072|33213|33316|33511|7711|89593|7742|7776|117570|117571|8287|32523|32524|8457|8459|8464|8486|8487|86974|86975",
+          "taxon_id": "86975",
+          "match_type": 1,
+          "prescore": "3|0|0",
+          "score": 0.988
+        }
+      ],
+      "preferred_results": [
+        {
+          "data_source_id": 12,
+          "data_source_title": "EOL",
+          "gni_uuid": "199b3aad-5777-56ba-bb10-8cf284e9d152",
+          "name_string": "Testudo graeca",
+          "canonical_form": "Testudo graeca",
+          "classification_path": "",
+          "classification_path_ranks": "",
+          "classification_path_ids": "",
+          "taxon_id": "32515670",
+          "local_id": "1055221",
+          "url": "http://eol.org/pages/1055221",
+          "match_type": 1,
+          "prescore": "3|0|0",
+          "score": 0.988
+        }
+      ],
+      "data_sources_number": 21,
+      "in_curated_sources": true
+    },
+    {
+      "supplied_name_string": "Pesquisas da"
+    },
+    {
+      "supplied_name_string": "Agamidae",
+      "results": [
+        {
+          "data_source_id": 1,
+          "data_source_title": "Catalogue of Life",
+          "gni_uuid": "31abb0d4-74b6-503a-a4d8-1db1a9ec65dc",
+          "name_string": "Agamidae",
+          "canonical_form": "Agamidae",
+          "classification_path": "Animalia|Chordata|Reptilia|Squamata|Agamidae",
+          "classification_path_ranks": "kingdom|phylum|class|order|family",
+          "classification_path_ids": "2362377|2362754|2362907|2363418|2363623",
+          "taxon_id": "2363623",
+          "match_type": 1,
+          "prescore": "1|0|0",
+          "score": 0.75
+        }
+      ],
+      "preferred_results": [
+        {
+          "data_source_id": 12,
+          "data_source_title": "EOL",
+          "gni_uuid": "31abb0d4-74b6-503a-a4d8-1db1a9ec65dc",
+          "name_string": "Agamidae",
+          "canonical_form": "Agamidae",
+          "classification_path": "",
+          "classification_path_ranks": "",
+          "classification_path_ids": "",
+          "taxon_id": "36759232",
+          "local_id": "1734",
+          "url": "http://eol.org/pages/1734",
+          "match_type": 1,
+          "prescore": "1|0|0",
+          "score": 0.75
+        }
+      ],
+      "data_sources_number": 14,
+      "in_curated_sources": true
+    },
+    {
+      "supplied_name_string": "Lacertilia",
+      "results": [
+        {
+          "data_source_id": 3,
+          "data_source_title": "ITIS",
+          "gni_uuid": "9f9742e3-c46d-5ee9-9aaf-08f0b454f2ea",
+          "name_string": "Lacertilia",
+          "canonical_form": "Lacertilia",
+          "classification_path": "Animalia|Chordata|Vertebrata|Reptilia|Squamata",
+          "classification_path_ranks": "Kingdom|Division|Subdivision|Class|Order",
+          "classification_path_ids": "202423|158852|331030|173747|173861",
+          "taxon_id": "173862",
+          "current_taxon_id": "173861",
+          "current_name_string": "Squamata Oppel, 1811",
+          "match_type": 1,
+          "prescore": "1|0|0",
+          "score": 0.75
+        }
+      ],
+      "preferred_results": [
+        {
+          "data_source_id": 12,
+          "data_source_title": "EOL",
+          "gni_uuid": "9f9742e3-c46d-5ee9-9aaf-08f0b454f2ea",
+          "name_string": "Lacertilia",
+          "canonical_form": "Lacertilia",
+          "classification_path": "",
+          "classification_path_ranks": "",
+          "classification_path_ids": "",
+          "taxon_id": "s_5238412",
+          "local_id": "2819161",
+          "url": "http://eol.org/pages/2819161/names/synonyms",
+          "match_type": 1,
+          "prescore": "1|0|0",
+          "score": 0.75
+        }
+      ],
+      "data_sources_number": 7,
+      "in_curated_sources": true
+    },
+    {
+      "supplied_name_string": "Genitales"
+    },
+    {
+      "supplied_name_string": "Eublepharis macularius",
+      "results": [
+        {
+          "data_source_id": 4,
+          "data_source_title": "NCBI",
+          "gni_uuid": "bd279706-7ab7-5b37-90ea-f1f2f2772b50",
+          "name_string": "Eublepharis macularius",
+          "canonical_form": "Eublepharis macularius",
+          "classification_path": "|Eukaryota|Opisthokonta|Metazoa|Eumetazoa|Bilateria|Coelomata|Deuterostomia|Chordata|Craniata|Vertebrata|Gnathostomata|Teleostomi|Euteleostomi|Sarcopterygii|Tetrapoda|Amniota|Sauropsida|Sauria|Lepidosauria|Squamata|Scleroglossa|Gekkota|Gekkonidae|Eublepharinae|Eublepharis|Eublepharis macularius",
+          "classification_path_ranks": "|superkingdom||kingdom|||||phylum|subphylum||superclass||||||||superorder|order|suborder|infraorder|family|subfamily|genus|species",
+          "classification_path_ids": "131567|2759|33154|33208|6072|33213|33316|33511|7711|89593|7742|7776|117570|117571|8287|32523|32524|8457|32561|8504|8509|34971|8560|8561|385255|96736|481883",
+          "taxon_id": "481883",
+          "match_type": 1,
+          "prescore": "3|0|0",
+          "score": 0.988
+        }
+      ],
+      "preferred_results": [
+        {
+          "data_source_id": 12,
+          "data_source_title": "EOL",
+          "gni_uuid": "bd279706-7ab7-5b37-90ea-f1f2f2772b50",
+          "name_string": "Eublepharis macularius",
+          "canonical_form": "Eublepharis macularius",
+          "classification_path": "",
+          "classification_path_ranks": "",
+          "classification_path_ids": "",
+          "taxon_id": "39192068",
+          "local_id": "790141",
+          "url": "http://eol.org/pages/790141",
+          "match_type": 1,
+          "prescore": "3|0|0",
+          "score": 0.988
+        }
+      ],
+      "data_sources_number": 18,
+      "in_curated_sources": true
+    }
+  ]
+}
