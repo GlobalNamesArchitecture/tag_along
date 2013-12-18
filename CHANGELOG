@@ -1,3 +1,5 @@
+0.8.3 -- corrected handling of depencencies
+
 0.8.2 -- bug fix where script would break on empty offset lists
 
 0.8.1 -- fixing tests
